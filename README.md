@@ -1,1 +1,2 @@
-# junker-queen-guide
+# Default-Website-Skeleton
+Default Website Skeleton Files - HTML, CSS, JS
