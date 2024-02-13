@@ -1,13 +1,12 @@
 /* General Styles */
 
 :root {
-    --accent: #00008b;
+    --accent: #2f2fcf;
     --light: #f8f8ff;
     --dark: #838996;
 }
 
 body{
-
     margin: 0;
     padding: 0;
     color: var(--light);
@@ -21,10 +20,13 @@ body{
     position: fixed;
     top: 0;
     left: 0;
+    width: 97.5%;
     display: flex;
     align-items: center;
-    padding: 10px;
+    justify-content: space-between;
+    padding: 0px 25px;
     z-index: 1;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 100%);
 }
 
 .nav-link {
@@ -37,11 +39,25 @@ body{
 .nav-link img {
     width: 64px;
     height: 64px;
+    transition: box-shadow 0.3s ease;
 }
 
-#scatter-gun.nav-link img {
+#scatter-gun-img.nav-link img {
     width: 128px;
     height: 128px;
+}
+
+.nav-link:hover img {
+    filter: drop-shadow(0 0 10px var(--light));
+}
+
+#junker-queen-image:hover {
+    filter: drop-shadow(0 0 5px var(--accent));
+}
+
+.nav-right {
+    display: flex;
+    margin-left: auto;
 }
 
 /* Main Banner */
@@ -57,25 +73,33 @@ body{
 .content-right {
     flex: 1;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.content-left {
+/* .content-left {
     margin-right: 20px;
 }
 
 .content-right {
     margin-left: 20px;
-}
+} */
 
 .portrait-image {
+    margin-top: 50px;
     width: 250px;
     height: auto;
 }
 
 .nav-section {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     display: flex;
     flex-direction: column;
+}
+
+.blank-line {
+    height: 20px;
 }
 
 a {
@@ -86,7 +110,8 @@ a {
 }
 
 a:hover, a:active {
-    color: var(--accent)
+    /* color: var(--accent); */
+    filter: drop-shadow(0 0 15px #f8f8ff);
 }
 
 /* Abilities */
