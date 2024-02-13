@@ -1,2 +1,2 @@
-# Default-Website-Skeleton
-Default Website Skeleton Files - HTML, CSS, JS
+# Junker Queen Guide
+Default HTML, CSS, JS
