@@ -59,99 +59,160 @@
 
 <!-- Content -->
 
-<main>
+<main class="page-content">
 
     <!-- Junker Queen -->
-    <div class="ability">
-        <section id="junker-queen">
+    <div class="ability" id="junker-queen">
+        <section class="card">
             <h1>Junker Queen</h1>
-            <p><span id="heroHealth"></span></p>
+            <p>
+                Junker Queen is a close-mid range rush tank. She should be played at a faster rate, usually poking from corners and then increasing aggression with opportunities.
+            </p>
+        </section>
+        <section class="card">
+            <h1>Junker Queen</h1>
+            <p>HP: <span id="heroHealth"></span></p>
         </section>
     </div>
 
     <!-- Scatter Gun -->
-    <div class="ability">
-        <section id="scatter-gun">
+    <div class="ability" id="scatter-gun">
+        <section class="card">
             <h1>Scatter Gun</h1>
-            <p>Content for Scatter Gun goes here.</p>
+            <p>Use at a close to medium range.</p>
+            <p>Damage per second: ~106 while firing (~85 overall w/reload).</p>
+            <p>Fire recovery stops while using melee.</p>
+        </section>
+        <section class="card">
+            <h1>Scatter Gun</h1>
+            <p>Damage: <span id="damagePellet"></span> (per pellet), <span id="damageShot"></span> (per shot)</p>
+            <p>Falloff Range: <span id="falloffRange"></span> meters</p>
+            <p>Headshot: <span id="headshot"></span></p>
+            <p>Rate of Fire: <span id="rateOfFire"></span> shot/s</p>
+            <p>Bullets per shot: <span id="bulletsPerShot"></span></p>
+            <p>Ammo per shot <span id="ammoPerShot"></span></p>
+            <p>Ammo: <span id="ammo"></span></p>
+            <p>Reload time: <span id="reloadTime"></span> seconds</p>
+            <p>Spread angle: <span id="spreadAngle"></span> degrees</p>
+            <p>Projectile radius: <span id="projectileRadius"></span> meters</p>
         </section>
     </div>
 
     <!-- Jagged Blade -->
-    <div class="ability">
-        <section id="jagged-blade">
+    <div class="ability" id="jagged-blade">
+        <section class="card">
             <h1>Jagged Blade</h1>
-            <p>Content for Jagged Blade goes here.</p>
+            <p>6 second cooldown.</p>
+            <p>Active: Throw the blade. Re-activate to pull it back with any impaled enemy.</p>
+            <p>Passive: Wound enemies hit by Quick Melee or Throw, dealing damage over time.</p>
+        </section>
+        <section class="card">
+            <h1>Jagged Blade</h1>
+            <p>Damage: <span id="bladeDamageHit"></span> (thrown hit), <span id="thrownHitWound"></span> (wound, thrown hit), <span id="returnHitWound"></span> (wound, return hit & melee)</p>
+            <p>Headshot: <span id="bladeHeadshot"></span></p>
+            <p>Cast time: <span id="castTime"></span> seconds</p>
+            <p>Duration: <span id="bladeDuration"></span> seconds</p>
+            <p>Max range: <span id="bladeMaxRange"></span> meters</p>
+            <p>Projectile speed: <span id="bladeProjectileSpeed"></span> m/s</p>
+            <p>Projectile radius: <span id="bladeProjectileRadius"></span> meters</p>
         </section>
     </div>
 
     <!-- Commanding Shout -->
-    <div class="ability">
-        <section id="commanding-shout">
+    <div class="ability" id="commanding-shout">
+        <section class="card">
             <h1>Commanding Shout</h1>
-            <p>Content for Commanding Shout goes here.</p>
+            <p>14 second cooldown.</p>
+        </section>
+        <section class="card">
+            <h1>Commanding Shout</h1>
+            <p>Health: <span id="selfOverhealth"></span> overhealth (self), <span id="allyOverhealth"></span> overhealth (ally)</p>
+            <p>Cast Time: <span id="shoutCastTime"></span></p>
+            <p>Duration: <span id="selfDuration"></span> seconds (self), <span id="allyDuration"></span> seconds (ally)</p>
+            <p>Area of Effect: <span id="areaOfEffect"></span> meter radius</p>
+            <p>Movement Speed: +<span id="movementSpeed"></span>% buff</p>
         </section>
     </div>
 
     <!-- Carnage -->
-    <div class="ability">
-        <section id="carnage">
+    <div class="ability" id="carnage">
+        <section class="card">
             <h1>Carnage</h1>
-            <p>Content for Carnage goes here.</p>
+            <p>8 second cooldown.</p>
+        </section>
+        <section class="card">
+            <h1>Carnage</h1>
+            <p>Damage: <span id="axeDamage"></span> (impact), <span id="axeWoundDamage"></span> seconds (wound)</p>
+            <p>Cast Time: <span id="axeCastTime"></span> seconds</p>
+            <p>Duration: <span id="axeDuration"></span> seconds (wound), <span id="axeHitboxActive"></span> seconds (hitbox active)</p>
+            <p>Max Range: <span id="axeMaxRange"></span> meters</p>
         </section>
     </div>
 
     <!-- Rampage -->
-    <div class="ability">
-        <section id="rampage">
+    <div class="ability" id="rampage">
+        <section class="card">
             <h1>Rampage</h1>
             <p>Content for Rampage goes here.</p>
+        </section>
+        <section class="card">
+            <h1>Rampage</h1>
+            <p>Damage: <span id="rampageDamage"></span></p>
+            <p>Cast Time: <span id="rampageCastTime"></span> seconds</p>
+            <p>Duration: <span id="dotDuration"></span> seconds (DoT), <span id="dashDuration"></span> seconds (dash)</p>
+            <p>Max Range: <span id="rampageMaxRange"></span> meters</p>
+            <p>Area of Effect: <span id="rampageAreaOfEffect"></span>  meters</p>
+            <p>Movement Speed: <span id="rampageMovementSpeed"></span> m/s</p>
         </section>
     </div>
 
     <!-- Adrenaline Rush -->
-    <div class="ability">
-        <section id="adrenaline-rush">
+    <div class="ability" id="adrenaline-rush">
+        <section class="card">
             <h1>Adrenaline Rush</h1>
-            <p>Content for Adrenaline Rush goes here.</p>
+            <p>Heal from all damage over time dealt by wounds.</p>
+        </section>
+        <section class="card">
+            <h1>Adrenaline Rush</h1>
+            <p>Healing: <span id="adrenalineRushHealing"></span>% of wound damage dealt</p>
         </section>
     </div>
 
     <!-- Play Style -->
-    <div class="ability">
-        <section id="play-style">
+    <div class="non-ability" id="play-style">
+        <section class="card">
             <h1>Play Style</h1>
             <p>Content for Play Style goes here.</p>
         </section>
     </div>
 
     <!-- Positioning -->
-    <div class="ability">
-        <section id="positioning">
+    <div class="non-ability" id="positioning">
+        <section class="card">
             <h1>Positioning</h1>
             <p>Content for Positioning goes here.</p>
         </section>
     </div>
 
     <!-- Communication -->
-    <div class="ability">
-        <section id="communication">
+    <div class="non-ability" id="communication">
+        <section class="card">
             <h1>Communication</h1>
             <p>Content for Communication goes here.</p>
         </section>
     </div>
 
     <!-- Counters -->
-    <div class="ability">
-        <section id="counters">
+    <div class="non-ability" id="counters">
+        <section class="card">
             <h1>Counters</h1>
             <p>Content for Counters goes here.</p>
         </section>
     </div>
 
     <!-- Compositions -->
-    <div class="ability">
-        <section id="compositions">
+    <div class="non-ability" id="compositions">
+        <section class="card">
             <h1>Compositions</h1>
             <p>Content for Compositions goes here.</p>
         </section>
